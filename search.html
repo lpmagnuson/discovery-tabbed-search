@@ -47,13 +47,13 @@ $('.windowForm').submit(function(e){
  
     <div class="tab-content">
         <div id="tab1" class="tab active">            
-             <form action="http://palni.on.worldcat.org/search?" class="windowForm" target="_blank">
+             <form action="http://palni.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch?databaseList=638" target="_blank">Advanced Search</a>
 
-                              <h3>Discovery Search</h3>        
+                              <h3>Search <span id="search-name">OneSearch 2.0</span></h3>        
 
                            </div>             
 
@@ -68,27 +68,34 @@ $('.windowForm').submit(function(e){
         </div>
  
         <div id="tab2" class="tab">
-            <form action="http://palni.on.worldcat.org/search?" target="_blank">
+            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch?databaseList=1708,2513,638" target="_blank">Advanced Search</a>
 
                               <h3>Find <span id="search-name">Books</span></h3>        
 
                            </div>             
 
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-                              <input type="hidden" name="databaseList" value="638">
+                              <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+							  <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
                               <input type="hidden" name="changedFacet" value="format">
                               <input type="hidden" name="format" value="Book">
-                              <input type="hidden" name="subformat" value="book_digital">
-                              <input type="hidden" name="subformat" value="book_thsis">
-                              <input type="hidden" name="subformat" value="mic">
-                              <input type="hidden" name="subformat" value="largeprint">
-                              <input type="hidden" name="subformat" value="braille">
-                              <input type="hidden" name="subformat" value="continuing">
+							  <input type="hidden" name="subformat" value="Book::book_printbook">
+                              <input type="hidden" name="subformat" value="Book::book_digital">
+                              <input type="hidden" name="subformat" value="Book::book_thsis">
+                              <input type="hidden" name="subformat" value="Book::book_mic">
+                              <input type="hidden" name="subformat" value="Book::book_largeprint">
+                              <input type="hidden" name="subformat" value="Book::book_braille">
+                              <input type="hidden" name="subformat" value="Book::book_continuing">
+							  <input type="hidden" name="database" value="all">
+							  <input type="hidden" name="author" value="all">
+							  <input type="hidden" name="year" value="all">
+							  <input type="hidden" name="yearFrom" value="">
+							  <input type="hidden" name="yearTo" value="">
+							  <input type="hidden" name="language" value="all">
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                            </div>
 
@@ -98,18 +105,20 @@ $('.windowForm').submit(function(e){
         </div>
  
         <div id="tab3" class="tab">
-            <form action="http://palni.on.worldcat.org/search?" target="_blank">
+            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch?databaseList=1708,2513,638" target="_blank">Advanced Search</a>
 
                               <h3>Find <span id="search-name">Articles</span></h3>        
                            </div>             
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-                              <input type="hidden" name="databaseList" value="638">
+							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+							  <input type="hidden" name="databaseList" value="638">
+							  <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
                               <input type="hidden" name="changedFacet" value="format">
+							  <input type="hidden" name="format" value="Artchap">
                               <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                            </div>
@@ -120,24 +129,25 @@ $('.windowForm').submit(function(e){
         </div>
  
         <div id="tab4" class="tab">
-           <form action="http://palni.on.worldcat.org/search?" target="_blank">
+           <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
                            <div id="search">
                            <div class="search-title">
 
-                              <a id="advanced-search" title="Advanced Search" href="http://palni.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+                              <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch?databaseList=1708,2513,638" target="_blank">Advanced Search</a>
 
                               <h3>Find <span id="search-name">Videos</span></h3>        
                            </div>             
                            <div class="searchTerm">
+						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
+							  <input type="hidden" name="databaseList" value="638">
                               <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
-                              <input type="hidden" name="databaseList" value="638">
                               <input type="hidden" name="changedFacet" value="format">
                               <input type="hidden" name="format" value="Video">
-                              <input type="hidden" name="subformat" value="video_dvd">
-                              <input type="hidden" name="subformat" value="video_vhs">
-                              <input type="hidden" name="subformat" value="video_film">
-                              <input type="hidden" name="subformat" value="video_digital">
-                              <input type="hidden" name="subformat" value="video_bluray">
+                              <input type="hidden" name="subformat" value="Video::video_dvd">
+                              <input type="hidden" name="subformat" value="Video::video_vhs">
+                              <input type="hidden" name="subformat" value="Video::video_film">
+                              <input type="hidden" name="subformat" value="Video::video_digital">
+                              <input type="hidden" name="subformat" value="Video::video_bluray">
 							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
                            </div>
 
