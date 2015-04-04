@@ -1,0 +1,185 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+jQuery(document).ready(function() {
+    jQuery('.tabs .tab-links a').on('click', function(e)  {
+        var currentAttrValue = jQuery(this).attr('href');
+ 
+        // Show/Hide Tabs
+        jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+ 
+        // Change/remove current tab to active
+        //jQuery(this).closest('h2').addClass('active').siblings().removeClass('active');
+		$('.tabs .tab-links a.selected').removeClass('selected');
+        $(this).addClass('selected');
+ 
+        e.preventDefault();
+    });
+});
+</script>
+<script>
+$('.windowForm').submit(function(e){
+	// specify a unique target name
+	var target = 'windowFormTarget';
+
+	// open a new window and name it
+	window.open('', target, 'width=500,height=300');
+
+	// set the target of the form to be
+	// the window name
+	this.setAttribute('target', target);
+
+	// allow the form to be submitted normally
+});
+</script>
+</head>
+<div id="search-wrapper">
+<div class="tabs">
+    <div class="tab-links">
+        <a href="#tab1" class="selected"><h2 class="fa fa-university"><br /><span class="tab-label">Duggan <br />Library</span></h2></a>
+        <a href="#tab2"><h2 class="fa fa-globe"><span class="tab-label"><br />Libraries <br />WorldWide</span></h2></a>
+		<a href="#tab3"><h2 class="fa fa-book"><span class="tab-label"><br />Books<br/>&nbsp;</span></h2></a>
+        <a href="#tab4"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles<br/>&nbsp;</span></h2></a>
+        <a href="#tab5"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video<br/>&nbsp;</span></h2></a>
+    </div>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">            
+             <form action="http://hanover.on.worldcat.org/search?" class="windowForm" target="_blank">
+                           <div id="search">
+                           <div class="search-title">
+
+                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+
+                              <h3>Search Duggan Library</h3>        
+
+                           </div>             
+
+                           <div class="searchTerm">
+                            <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+							<input type="hidden" name="changedFacet" value="scope">
+                              <input type="hidden" name="scope" value="wz:1076">
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+
+                        </div>
+
+                     </form>
+        </div>
+ 
+        <div id="tab2" class="tab">
+            <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+                           <div id="search">
+                           <div class="search-title">
+
+                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+
+                              <h3>Search <span id="search-name">Libraries WorldWide</span></h3>        
+
+                           </div>             
+
+                           <div class="searchTerm">
+                              <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input type="hidden" name="databaseList" value="638">
+                              <!--<input type="hidden" name="changedFacet" value="format">
+                              <input type="hidden" name="format" value="book">
+                              <input type="hidden" name="subformat" value="book_digital">
+                              <input type="hidden" name="subformat" value="book_thsis">
+                              <input type="hidden" name="subformat" value="mic">
+                              <input type="hidden" name="subformat" value="largeprint">
+                              <input type="hidden" name="subformat" value="braille">
+                              <input type="hidden" name="subformat" value="continuing">-->
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+
+                        </div>
+
+                     </form>
+        </div>
+		
+		<div id="tab3" class="tab">
+            <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+                           <div id="search">
+                           <div class="search-title">
+
+                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+
+                              <h3>Find<span id="search-name"> Books</span></h3>        
+
+                           </div>             
+
+                           <div class="searchTerm">
+                              <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input type="hidden" name="databaseList" value="638">
+                              <input type="hidden" name="changedFacet" value="format">
+                              <input type="hidden" name="format" value="book">
+                              <input type="hidden" name="subformat" value="book_digital">
+                              <input type="hidden" name="subformat" value="book_thsis">
+                              <input type="hidden" name="subformat" value="mic">
+                              <input type="hidden" name="subformat" value="largeprint">
+                              <input type="hidden" name="subformat" value="braille">
+                              <input type="hidden" name="subformat" value="continuing">
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+
+                        </div>
+
+                     </form>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+                           <div id="search">
+                           <div class="search-title">
+
+                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+
+                              <h3>Find <span id="search-name">Articles</span></h3>        
+                           </div>             
+                           <div class="searchTerm">
+                              <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input type="hidden" name="databaseList" value="638">
+                              <input type="hidden" name="changedFacet" value="format">
+                              <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+
+                        </div>
+
+                     </form>
+        </div>
+ 
+        <div id="tab5" class="tab">
+           <form action="http://hanover.on.worldcat.org/search?" target="_blank">
+                           <div id="search">
+                           <div class="search-title">
+
+                              <a id="advanced-search" title="Advanced Search" href="http://hanover.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
+
+                              <h3>Find <span id="search-name">Videos</span></h3>        
+                           </div>             
+                           <div class="searchTerm">
+                              <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input type="hidden" name="databaseList" value="638">
+                              <input type="hidden" name="changedFacet" value="format">
+                              <input type="hidden" name="format" value="Video">
+                              <input type="hidden" name="subformat" value="video_dvd">
+                              <input type="hidden" name="subformat" value="video_vhs">
+                              <input type="hidden" name="subformat" value="video_film">
+                              <input type="hidden" name="subformat" value="video_digital">
+                              <input type="hidden" name="subformat" value="video_bluray">
+							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                           </div>
+
+                        </div>
+
+                     </form>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
