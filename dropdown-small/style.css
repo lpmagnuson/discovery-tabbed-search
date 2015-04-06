@@ -4,9 +4,9 @@
     position:relative;
     max-width:100%;
     margin:auto;
-    width:875px;
-    font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    width:450px;
     letter-spacing: 0.02rem;
+    font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .tabs {
@@ -61,8 +61,8 @@
         font-size: 16px;
         text-decoration: none;
         margin: 10px 0;
-        font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
         color: #000000;
+	font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     }
  
     /*----- Content of Tabs -----*/
@@ -100,14 +100,13 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 40px;
-    width: 95%;
-    padding-left: .6rem;
+    width: 60%;
+    padding-left: .2rem;
     padding-right: 8px;
-    font-size: 16px;
-    font-size: 1.6rem;
+    font-size: .8rem;
     margin: 10px auto;
-    border: 0;
-    outline: 2px solid #990000;
+    border: 2px solid #990000;
+    float:left;
 }
     
     input.headersubmit {
@@ -115,23 +114,43 @@
     -webkit-appearance: none;
     vertical-align: middle;
     height: 40px;
-    width: 44px;
-    margin-left: -47px;
+    width: 8%;
+    margin: 10px auto;
     border: 0;
     background-color: #990000;
     color: #ffffff;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     font-family: 'FontAwesome', sans-serif;
     cursor: pointer;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    float:left;
 }
+
+    select.dropdown-menu {
+        display: inline;
+        vertical-align: middle;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32%;
+        float:left;
+        background: transparent;
+        padding: 2px;
+        font-size: 12px;
+        border: 2px solid #990000;
+        border-radius: 0;
+        height: 40px;
+	margin: 10px auto;
+	cursor: pointer;
+        font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
     a#advanced-search {
     float:right;
     line-height: 0;
-    margin-top: 20px; 
-    margin-right: 20px;
+    margin: 20px 5px 0 0; 
     font-size: .8em;
 	text-decoration: none;
 	color: #990000;
