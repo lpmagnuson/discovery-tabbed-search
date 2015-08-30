@@ -17,3 +17,6 @@ Once the code is on a server somewhere, you can create an iframe for use embeddi
 http://www.example.com/search.html" width="450"></iframe></p>
 ```
 Just replace http://www.example.com/search.html with the location of the search.html page on your server.
+
+####License
+GNU GPL Open Source License.  &copy; PALNI 2015.
