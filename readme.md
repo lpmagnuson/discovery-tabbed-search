@@ -10,6 +10,13 @@ Use the files in the dropdown folder to give your users a choice of your local l
 
 ![Search box with dropdowns](https://raw.githubusercontent.com/lpmagnuson/discovery-tabbed-search/master/images/dropdown.png)
 
+####Hosting with LibGuides
+If you don't have a web server, you can use the combined.html file.  Edit form action URLs, search parameters, and CSS as desired.  In LibGuides Admin, go to Content > Assets.  Upload combined.html as a Document.  Note the ID of the document, and construct a URL that looks like this:
+
+http://libguides.yourschool.edu/ld.php?content_id=22044474   
+
+Use this URL to construct your embed code (see below).
+
 ####Embedding a search box
 Once the code is on a server somewhere, you can create an iframe for use embedding in LibGuides or other web pages, for example:
 ```
