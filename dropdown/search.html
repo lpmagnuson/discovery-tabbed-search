@@ -34,6 +34,21 @@ $('.windowForm').submit(function(e){
 
 	// allow the form to be submitted normally
 });
+//retain search term input when switching tabs
+$(document).ready(function(){
+    $('#query1').change(function() {
+    $('.searchbox').val($('#query1').val());
+    });
+    $('#query2').change(function() {
+    $('.searchbox').val($('#query2').val());
+    });
+    $('#query3').change(function() {
+    $('.searchbox').val($('#query3').val());
+    });
+    $('#query4').change(function() {
+    $('.searchbox').val($('#query4').val());
+    });
+    });
 </script>
 </head>
 <div id="search-wrapper">
@@ -58,7 +73,7 @@ $('.windowForm').submit(function(e){
                            </div>             
 
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query1" class="searchbox" name="queryString">
                            </div>
 						   <div class="dropdown-menu">
 						   <select name="scope" id="searchLibrary" class="dropdown-menu">
@@ -85,7 +100,7 @@ $('.windowForm').submit(function(e){
                            </div>             
 
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find books...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input placeholder="Find books...." autofocus="autofocus" id="query2" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Book">
 							  <input type="hidden" name="subformat" value="Book::book_printbook">
                               <input type="hidden" name="subformat" value="Book::book_digital">
@@ -118,7 +133,7 @@ $('.windowForm').submit(function(e){
                               <h3>Find <span id="search-name">Articles</span></h3>        
                            </div>             
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find articles...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input placeholder="Find articles...." autofocus="autofocus" id="query3" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Artchap">
                               <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
 							
@@ -146,7 +161,7 @@ $('.windowForm').submit(function(e){
                               <h3>Find <span id="search-name">Videos</span></h3>        
                            </div>             
                            <div class="searchTerm">
-                              <input id="realquery" placeholder="Find videos...." autofocus="autofocus" id="query" class="searchbox" name="queryString">
+                              <input placeholder="Find videos...." autofocus="autofocus" id="query4" class="searchbox" name="queryString">
                               <input type="hidden" name="format" value="Video">
                               <input type="hidden" name="subformat" value="Video::video_dvd">
                               <input type="hidden" name="subformat" value="Video::video_vhs">
