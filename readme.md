@@ -17,7 +17,7 @@ http://yourschool.libguides.com/ld.php?content_id=22044474
 
 Use this URL to construct your embed code (see below).
 
-NOTE: If you need to use https (e.g., you are embedding your search box in a page that requires or loads https by default, which is always recommended), you can only use https if your LibGuides domain uses libguides.com.  If you have a custom LibGuides domain (e.g., libguides.yourschool.edu), you cannot use https with these URLs and thus your search box cannot be embedded into secure web pages.  If you are in this situation, you may wish to seek out a low-cost web host or a host that offers free hosting for non-profits.  More information about the use of https with LibGuides custom domains is available from [Springshare help](http://guidefaq.com/a.php?qid=43801).  
+NOTE: If you need to use https (e.g., you are embedding your search box in a page that requires or loads https by default, which is always recommended), you can only use https if your LibGuides domain uses libguides.com.  If you have a custom LibGuides domain (e.g., libguides.yourschool.edu), you cannot use https with these URLs and thus your search box cannot be embedded into secure web pages.  If you are in this situation, you may wish to seek out a low-cost web host or a host that offers free hosting for non-profits.  More information about the use of https with LibGuides custom domains is available from [SpringShare help](http://guidefaq.com/a.php?qid=43801).  
 
 ####Embedding a search box
 Once the code is on a server somewhere, you can create an iframe for use embedding in LibGuides or other web pages, for example:
