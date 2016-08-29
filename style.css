@@ -3,8 +3,8 @@
     text-align:center;
     position:relative;
     max-width:100%;
-    margin:auto;
-    width:875px;
+    #margin:auto;
+    #width:875px;
     font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
     letter-spacing: 0.02rem;
 }
@@ -31,7 +31,7 @@
         content:'';
     }
  
-    .tab-links h2 {
+    .tab-links h4 {
         margin:0px 5px;
         list-style:none;
         display:inline-block;
@@ -43,22 +43,18 @@
             padding:9px 15px;
             display:inline-block;
             border-radius:3px 3px 0px 0px;
-            font-size:16px;
             font-weight:600;
             transition:all linear 0.15s;
             text-decoration:none;
 			color: rgb(0, 0, 0);
     }
 	
-		.tab-links a.selected h2 {
+		.tab-links a.selected h4 {
 		   color: rgb(0,160,223);
 		}
-        .tab-links h2 {
-        font-size:2.4em;
-    }
 
         .tab-label {
-        font-size: 16px;
+        #font-size: 16px;
         text-decoration: none;
         margin: 10px 0;
         font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -67,9 +63,9 @@
  
     /*----- Content of Tabs -----*/
     .tab-content {
-        padding:15px;
+        padding:10px;
         border-radius:3px;
-        text-align:center;
+        #text-align:center;
 }
  
         .tab {
@@ -85,8 +81,8 @@
     position: relative;
 }
 	
-	#search h3 {
-    font-size: 1.5em;
+	#search h4 {
+    #font-size: 1.5em;
     width: 95%;
     margin:auto;
     text-align:left;
@@ -103,8 +99,6 @@
     width: 95%;
     padding-left: .6rem;
     padding-right: 8px;
-    font-size: 16px;
-    font-size: 1.6rem;
     margin: 10px auto;
     border: 0;
     outline: 2px solid rgb(0,105,170);
@@ -131,7 +125,7 @@
     float:right;
     line-height: 0;
     margin-top: 20px; 
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: .8em;
 	text-decoration: none;
 }

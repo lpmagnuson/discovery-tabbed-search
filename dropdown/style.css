@@ -3,8 +3,8 @@
     text-align:center;
     position:relative;
     max-width:100%;
-    margin:auto;
-    width:600px;
+    #margin:auto;
+    #max-width:600px;
     letter-spacing: 0.02rem;
     font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -31,7 +31,7 @@
         content:'';
     }
  
-    .tab-links h2 {
+    .tab-links h4 {
         margin:0px 5px;
         list-style:none;
         display:inline-block;
@@ -50,15 +50,12 @@
 			color: rgb(0, 0, 0);
     }
 	
-		.tab-links a.selected h2 {
+		.tab-links a.selected h4 {
 		   color: rgb(0,160,223);
 		}
-        .tab-links h2 {
-        font-size:2.4em;
-    }
 
         .tab-label {
-        font-size: 16px;
+        #font-size: 16px;
         text-decoration: none;
         margin: 10px 0;
         color: #000000;
@@ -67,9 +64,9 @@
  
     /*----- Content of Tabs -----*/
     .tab-content {
-        padding:15px;
+        padding:10px;
         border-radius:3px;
-        text-align:center;
+        #text-align:center;
 }
  
         .tab {
@@ -84,10 +81,14 @@
 	.searchTerm {
     position: relative;
 }
+	#search {
+	width: 100%
+	text-align:left;
+	}
 	
-	#search h3 {
-    font-size: 1.5em;
-    width: 95%;
+	#search h4 {
+    #font-size: 1.5em;
+    #width: 95%;
     margin:auto;
     text-align:left;
 }
@@ -100,7 +101,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     height: 40px;
-    width: 67%;
+    width: 63%;
     padding-left: .6rem;
     padding-right: 8px;
     font-size: 1.2rem;
@@ -114,8 +115,8 @@
     -webkit-appearance: none;
     vertical-align: middle;
     height: 40px;
-    width: 8%;
-    margin: 10px auto;
+    width: 7%;
+    margin: 9px auto;
     border: 0;
     background-color: rgb(0,105,170);
     color: #ffffff;
@@ -128,14 +129,14 @@
     float:left;
 }
 
-    select.dropdown-menu {
+    select.custom-dropdown-menu {
         display: inline;
         -webkit-appearance: none;
-        vertical-align: middle;
+        vertical-align: right;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        width: 25%;
+        width: 30%;
         float:left;
         background: transparent;
         padding: 5px;
@@ -143,8 +144,8 @@
         border: 2px solid rgb(0,105,170);
         border-radius: 0;
         height: 40px;
-	margin: 10px auto;
-	cursor: pointer;
+		margin: 9px auto;
+		cursor: pointer;
         font-family: "Source Sans Pro","Myriad Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
