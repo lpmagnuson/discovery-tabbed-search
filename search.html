@@ -2,6 +2,13 @@
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
 jQuery(document).ready(function() {
@@ -54,28 +61,28 @@ $(document).ready(function(){
 <body>
 <div id="search-wrapper">
 <div class="tabs">
-    <div class="tab-links">
-        <a href="#tab1" class="selected"><h2 class="fa fa-university"><br /><span class="tab-label">Everything</span></h2></a>
-        <a href="#tab2"><h2 class="fa fa-book"><span class="tab-label"><br />Books</span></h2></a>
-        <a href="#tab3"><h2 class="fa fa-list-alt"><span class="tab-label"><br />Articles</span></h2></a>
-        <a href="#tab4"><h2 class="fa fa-video-camera"><span class="tab-label"><br />Video</span></h2></a>
+    <div class="tab-links" >
+        <a href="#tab1" class="selected"><h4><span class="fa fa-university fa-2x"></span><br /><span class="tab-label">Everything</span></h4></a>
+        <a href="#tab2"><h4><span class="fa fa-book fa-2x"></span><span class="tab-label"><br />Books</span></h4></a>
+        <a href="#tab3"><h4><span class="fa fa-list-alt fa-2x"></span><span class="tab-label"><br />Articles</span></h4></a>
+        <a href="#tab4"><h4><span class="fa fa-video-camera fa-2x"></span><span class="tab-label"><br />Video</span></h4></a>
     </div>
  
     <div class="tab-content">
-        <div id="tab1" class="tab active">            
-             <form action="http://palni.on.worldcat.org/search" class="windowForm" target="_blank" method="get">
+        <div id="tab1" class="container tab active">            
+             <form action="http://palni.on.worldcat.org/search" class="windowForm" target="_blank" method="get" class="form-horizontal" role="form">
                            <div id="search">
                            <div class="search-title">
 
                               <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Search <span id="search-name">OneSearch 2.0</span></h3>        
+                              <h4>Search Everything</h4>        
 
                            </div>             
 
                            <div class="searchTerm">
-                            <input placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query1" class="searchbox" name="queryString">
-							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+                            <input type="text" placeholder="Find books, videos, music, and more...." autofocus="autofocus" id="query1" class="searchbox form-control" name="queryString">
+							<input type="submit" class="headersubmit form-control" value="&#xf002;" title="Search">
                            </div>
 
                         </div>
@@ -83,20 +90,20 @@ $(document).ready(function(){
                      </form>
         </div>
  
-        <div id="tab2" class="tab">
-            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+        <div id="tab2" class="container tab">
+            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get" class="form-horizontal" role="form">
                            <div id="search">
                            <div class="search-title">
 
                               <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Books</span></h3>        
+                              <h4>Find Books</h4>        
 
                            </div>             
 
                            <div class="searchTerm">
                               <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
-							  <input placeholder="Find books...." autofocus="autofocus" id="query2" class="searchbox" name="queryString">
+							  <input type="text" placeholder="Find books...." autofocus="autofocus" id="query2" class="searchbox form-control" name="queryString">
                               <input type="hidden" name="format" value="Book">
 							  <input type="hidden" name="subformat" value="Book::book_printbook">
                               <input type="hidden" name="subformat" value="Book::book_digital">
@@ -111,7 +118,7 @@ $(document).ready(function(){
 							  <input type="hidden" name="yearFrom" value="">
 							  <input type="hidden" name="yearTo" value="">
 							  <input type="hidden" name="language" value="all">
-							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+							<input type="submit" class="headersubmit form-control" value="&#xf002;" title="Search">
                            </div>
 
                         </div>
@@ -119,22 +126,22 @@ $(document).ready(function(){
                      </form>
         </div>
  
-        <div id="tab3" class="tab">
-            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+        <div id="tab3" class="container tab">
+            <form action="http://palni.on.worldcat.org/search" target="_blank" method="get" class="form-horizontal" role="form">
                            <div id="search">
                            <div class="search-title">
 
                               <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Articles</span></h3>        
+                              <h4>Find Articles</h4>        
                            </div>             
                            <div class="searchTerm">
 							  <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="638">
-							  <input placeholder="Find articles...." autofocus="autofocus" id="query3" class="searchbox" name="queryString">
+							  <input type="text" placeholder="Find articles...." autofocus="autofocus" id="query3" class="searchbox form-control" name="queryString">
 							  <input type="hidden" name="format" value="Artchap">
                               <input type="hidden" name="subformat" value="Artchap::artchap_artcl">
-							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+							<input type="submit" class="headersubmit form-control" value="&#xf002;" title="Search">
                            </div>
 
                         </div>
@@ -142,26 +149,26 @@ $(document).ready(function(){
                      </form>
         </div>
  
-        <div id="tab4" class="tab">
-           <form action="http://palni.on.worldcat.org/search" target="_blank" method="get">
+        <div id="tab4" class="container tab">
+           <form action="http://palni.on.worldcat.org/search" target="_blank" method="get" class="form-horizontal" role="form">
                            <div id="search">
                            <div class="search-title">
 
                               <a id="advanced-search" title="Advanced Search" href="http://palni.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a>
 
-                              <h3>Find <span id="search-name">Videos</span></h3>        
+                              <h4>Find Video</h4>        
                            </div>             
                            <div class="searchTerm">
 						      <input type="hidden" name="sortKey" value="LIBRARY_PLUS_RELEVANCE">
 							  <input type="hidden" name="databaseList" value="638">
-                              <input placeholder="Find videos...." autofocus="autofocus" id="query4" class="searchbox" name="queryString">
+                              <input type="text" placeholder="Find videos...." autofocus="autofocus" id="query4" class="searchbox form-control" name="queryString">
                               <input type="hidden" name="format" value="Video">
                               <input type="hidden" name="subformat" value="Video::video_dvd">
                               <input type="hidden" name="subformat" value="Video::video_vhs">
                               <input type="hidden" name="subformat" value="Video::video_film">
                               <input type="hidden" name="subformat" value="Video::video_digital">
                               <input type="hidden" name="subformat" value="Video::video_bluray">
-							<input type="submit" class="headersubmit" value="&#xf002;" title="Search">
+							<input type="submit" class="headersubmit form-control" value="&#xf002;" title="Search">
                            </div>
 
                         </div>
