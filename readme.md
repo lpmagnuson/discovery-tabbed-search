@@ -29,5 +29,10 @@ Just replace http://www.example.com/search.html with the location of the search.
 
 Be sure to include a height parameter of at least 250px (especially in LibGuides) for responsive optimization.
 
+####Interested in Data Visualization?
+This search box code is released open source and is free to use, but consider supporting its author (me) by buying a copy of the [LITA Guide to Data Visualization](https://www.amazon.com/Data-Visualization-Visual-Storytelling-Libraries/dp/1442271108).  Thanks!
+
 ####License
 GNU GPL Open Source License.  &copy; PALNI 2015.
+
+
