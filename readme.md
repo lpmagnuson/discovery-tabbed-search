@@ -22,10 +22,9 @@ NOTE: If you need to use https (e.g., you are embedding your search box in a pag
 ####Embedding a search box
 Once the code is on a server somewhere, you can create an iframe for use embedding in LibGuides or other web pages, for example:
 ```
-<p style="text-align:center"><iframe frameborder="0" height="250" scrolling="no" seamless="" src="
-http://www.example.com/search.html" width="450"></iframe></p>
+<p style="text-align:center"><iframe frameborder="0" height="250" scrolling="no" seamless="" src="//www.example.com/search.html" width="450"></iframe></p>
 ```
-Just replace http://www.example.com/search.html with the location of the search.html page on your server.
+Just replace //www.example.com/search.html with the location of the search.html page on your server.  Note:  this method of declaring the src of the iframe (// instead of http://) presumes that you are hosting your search box on a secure server that can serve pages via https (// allows the page to be served using either protocol).  It is recommended to host your search box on a secure server with https, so that your search box will appear as an iframe embedded on pages that use https.  If your library home page uses https and you embed the iframe using http, the iframe will not load because the content is insecure.
 
 Be sure to include a height parameter of at least 250px (especially in LibGuides) for responsive optimization.
 
